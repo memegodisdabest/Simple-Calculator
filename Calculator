@@ -1,0 +1,26 @@
+// Get the user input
+let num1 = parseFloat(prompt("Enter the first number: "));
+let operator = prompt("Enter the operation (+, -, *, /): ");
+let num2 = parseFloat(prompt("Enter the second number: "));
+
+// Perform the calculation
+let result;
+switch (operator) {
+  case "+":
+    result = num1 + num2;
+    break;
+  case "-":
+    result = num1 - num2;
+    break;
+  case "*":
+    result = num1 * num2;
+    break;
+  case "/":
+    result = num1 / num2;
+    break;
+  default:
+    result = NaN;
+}
+
+// Print the result
+console.log(`The result is: ${result}`);
